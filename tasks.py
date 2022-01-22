@@ -48,7 +48,7 @@ app = click.Group("tasks")
 
 
 def _get_package_info():
-    """Return the package name and version from pyproject.toml."""
+    """Return the package name and version from pysparkexplore.toml."""
     buffer = run(
         [POETRY_CMD, "version"], capture_output=True, encoding="utf-8"
     )
@@ -62,9 +62,9 @@ def _get_package_info():
 
 def _get_installed_package_info():
     """Return the name and version of the installed project package."""
-    import pyproject
+    import pysparkexplore
 
-    return pyproject.metadata["name"], pyproject.__version__
+    return pysparkexplore.metadata["name"], pysparkexplore.__version__
 
 
 @app.command()
@@ -136,9 +136,9 @@ def upgrade():
 @app.command()
 def version():
     """Show the installed project version."""
-    import pyproject
+    import pysparkexplore
 
-    print(f"{pyproject.metadata['name']} {pyproject.__version__}")
+    print(f"{pysparkexplore.metadata['name']} {pysparkexplore.__version__}")
 
 
 @app.command()

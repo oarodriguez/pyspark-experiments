@@ -1,7 +1,7 @@
 """Verify the library top-level functionality."""
-import pyproject
+import pysparkexplore
 
 
 def test_version():
     """Verify we have updated the package version."""
-    assert pyproject.__version__ == "2021.2.0"
+    assert pysparkexplore.__version__ == "2021.2.0"

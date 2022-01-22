@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pyproject"
+name = "pysparkexplore"
 version = "2021.2.0"
 description = "A template for your Python project. It uses Poetry as a dependency manager and Apache 2.0 as its license."
 license = "Apache-2.0"
@@ -7,8 +7,8 @@ authors = [
   "Omar Abel Rodríguez-López <oarodriguez.mx@gmail.com>"
 ]
 readme = "README.md"
-homepage = "https://github.com/oarodriguez/python-project"
-repository = "https://github.com/oarodriguez/python-project"
+homepage = "https://github.com/oarodriguez/pyspark-explore"
+repository = "https://github.com/oarodriguez/pyspark-explore"
 classifiers = [
   "Development Status :: 1 - Planning",
   "Intended Audience :: Developers",
@@ -31,7 +31,7 @@ classifiers = [
 ]
 
 packages = [
-  { include = "pyproject", from = "src" }
+  { include = "pysparkexplore", from = "src" }
 ]
 
 [tool.poetry.dependencies]
@@ -86,7 +86,7 @@ source = ["src"]
 [tool.coverage.run]
 parallel = true
 branch = true
-source = ["pyproject"]
+source = ["pysparkexplore"]
 
 [tool.coverage.report]
 show_missing = true

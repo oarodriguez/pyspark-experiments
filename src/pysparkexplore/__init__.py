@@ -1,4 +1,4 @@
-"""pyproject - A template for your Python project.
+"""pysparkexplore - A template for your Python project.
 
 Copyright © 2021, Omar Abel Rodríguez-López.
 """
@@ -9,7 +9,7 @@ try:
 except ModuleNotFoundError:  # pragma: no cover
     import importlib_metadata  # type: ignore
 
-metadata = importlib_metadata.metadata("pyproject")  # type: ignore
+metadata = importlib_metadata.metadata("pysparkexplore")
 
 # Export package information.
 __version__ = metadata["version"]
