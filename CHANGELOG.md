@@ -18,7 +18,7 @@ TODO.
 
 ### Removed
 
-TODO.
+- Drop Python 3.7 from the GitHub actions configuration.
 
 ### Fixed
 
