@@ -6,7 +6,7 @@ Versions follow [CalVer](https://calver.org).
 
 ### Added
 
-TODO
+- Add `pyspark` as a dependency.
 
 ### Changed
 
