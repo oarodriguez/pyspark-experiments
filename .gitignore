@@ -228,4 +228,7 @@ $RECYCLE.BIN/
 /dask-worker-space
 
 # Environments with a suffix.
-venv*/
+.venv*
+
+# Large CSV files. We have to add a manual suffix so this works.
+*.gitignore.csv
